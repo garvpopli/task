@@ -12,7 +12,7 @@ scraped_data = []
 
 # Load the CSV file
 csv_file_path = '/content/Amazon Scraping - Sheet1.csv' # Update with your CSV file path
-with open(csv_file_path, 'r') as csvfile:
+with open('/content/Amazon Scraping - Sheet1.csv', 'r') as csvfile:
     csvreader = csv.DictReader(csvfile)
     for row in csvreader:
         country_code = row.get('Country Code', '') # Handle missing values gracefully
